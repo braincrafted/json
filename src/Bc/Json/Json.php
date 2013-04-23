@@ -5,7 +5,7 @@
  * (c) 2013 Florian Eckerstorfer
  */
 
-namespace BcJson;
+namespace Bc\Json;
 
 /**
  * Json

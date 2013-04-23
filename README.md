@@ -1,4 +1,4 @@
-BcJson
+Bc\Json
 ======
 
 [![Build Status](https://travis-ci.org/braincrafted/json.png)](https://travis-ci.org/braincrafted/json)
@@ -12,8 +12,8 @@ Usage
 
     <?php
 
-    use BcJson\Json;
-    use BcJson\JsonDecodeException;
+    use Bc\Json\Json;
+    use Bc\Json\JsonDecodeException;
 
     // Encode a variable as JSON:
     echo Json::encode(array('name' => 'Bilbo Baggins'));

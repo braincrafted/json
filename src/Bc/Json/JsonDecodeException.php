@@ -1,6 +1,6 @@
 <?php
 
-namespace BcJson;
+namespace Bc\Json;
 
 class JsonDecodeException extends \Exception
 {

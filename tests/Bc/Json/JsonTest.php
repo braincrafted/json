@@ -1,11 +1,11 @@
 <?php
 /**
- * This file is part of BcJson.
+ * This file is part of Bc\Json.
  *
  * (c) 2013 Florian Eckerstorfer
  */
 
-namespace BcJson;
+namespace Bc\Json;
 
 /**
  * JsonTest
@@ -22,7 +22,7 @@ class JsonTest extends \PHPUnit_Framework_TestCase
     /**
      * Tests the <code>encode()</code> method.
      *
-     * @covers BcJson\Json::encode()
+     * @covers Bc\Json\Json::encode()
      */
     public function testEncode()
     {
@@ -33,8 +33,8 @@ class JsonTest extends \PHPUnit_Framework_TestCase
     /**
      * Tests the <code>decode()</code> method.
      *
-     * @covers BcJson\Json::decode()
-     * @covers BcJson\Json::getError()
+     * @covers Bc\Json\Json::decode()
+     * @covers Bc\Json\Json::getError()
      */
     public function testDecode()
     {
@@ -45,10 +45,10 @@ class JsonTest extends \PHPUnit_Framework_TestCase
     /**
      * Tests the <code>decode()</code> method with an excpetion.
      *
-     * @covers BcJson\Json::decode()
-     * @covers BcJson\Json::getError()
+     * @covers Bc\Json\Json::decode()
+     * @covers Bc\Json\Json::getError()
      *
-     * @expectedException BcJson\JsonDecodeException
+     * @expectedException Bc\Json\JsonDecodeException
      */
     public function testDecode_WithError()
     {

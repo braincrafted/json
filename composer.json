@@ -5,6 +5,6 @@
         "mockery/mockery": "0.8.x"
     },
     "autoload": {
-        "psr-0": {"BcJson": "src/"}
+        "psr-0": {"Bc\\Json": "src/"}
     }
 }

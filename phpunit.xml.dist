@@ -3,13 +3,13 @@
 <phpunit bootstrap="tests/bootstrap.php" colors="true">
     <testsuites>
         <testsuite name="BcJson Test Suite">
-            <directory>tests/BcJson/</directory>
+            <directory>tests/Bc/Json/</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
-            <directory suffix=".php">src/BcJson/</directory>
+            <directory suffix=".php">src/Bc/Json/</directory>
         </whitelist>
     </filter>
 </phpunit>
