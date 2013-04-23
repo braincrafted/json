@@ -1,6 +1,8 @@
 BcJson
 ======
 
+[![Build Status](https://travis-ci.org/braincrafted/json.png)](https://travis-ci.org/braincrafted/json)
+
 An object-orientated wrapper for json_encode() and json_decode() that also handles errors.
 
 By [Florian Eckerstorfer](http://florianeckerstorfer.com).
