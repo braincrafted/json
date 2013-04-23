@@ -1,0 +1,10 @@
+{
+    "name": "braincrafted/json",
+    "require-dev": {
+        "phpunit/phpunit": "3.7.x",
+        "mockery/mockery": "0.8.x"
+    },
+    "autoload": {
+        "psr-0": {"BcJson": "src/"}
+    }
+}
