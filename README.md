@@ -1,4 +1,4 @@
-Bc\Json
+BcJson
 ======
 
 [![Build Status](https://travis-ci.org/braincrafted/json.png)](https://travis-ci.org/braincrafted/json)
@@ -6,6 +6,17 @@ Bc\Json
 An object-orientated wrapper for json_encode() and json_decode() with error handling.
 
 By [Florian Eckerstorfer](http://florianeckerstorfer.com).
+
+Installation
+------------
+
+The recommended way of installing BcJson is through [Composer](http://getcomposer.org):
+
+    {
+        "require": {
+            "braincrafted/json": "dev-master"
+        }
+    }
 
 Usage
 -----
