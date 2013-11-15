@@ -1,17 +1,17 @@
 <?php
 /**
- * This file is part of Bc\Json.
+ * This file is part of Braincrafted\Json.
  *
  * (c) 2013 Florian Eckerstorfer
  */
 
-namespace Bc\Json;
+namespace Braincrafted\Json;
 
 /**
  * JsonTest
  *
  * @category  Tests
- * @package   BcJson
+ * @package   BraincraftedJson
  * @author    Florian Eckerstorfer <florian@eckerstorfer.co>
  * @copyright 2013 Florian Eckerstorfer
  * @license   http://opensource.org/licenses/MIT The MIT License
@@ -22,7 +22,7 @@ class JsonTest extends \PHPUnit_Framework_TestCase
     /**
      * Tests the <code>encode()</code> method.
      *
-     * @covers Bc\Json\Json::encode()
+     * @covers Braincrafted\Json\Json::encode()
      */
     public function testEncode()
     {
@@ -33,8 +33,8 @@ class JsonTest extends \PHPUnit_Framework_TestCase
     /**
      * Tests the <code>decode()</code> method.
      *
-     * @covers Bc\Json\Json::decode()
-     * @covers Bc\Json\Json::getError()
+     * @covers Braincrafted\Json\Json::decode()
+     * @covers Braincrafted\Json\Json::getError()
      */
     public function testDecode()
     {
@@ -45,10 +45,10 @@ class JsonTest extends \PHPUnit_Framework_TestCase
     /**
      * Tests the <code>decode()</code> method with an excpetion.
      *
-     * @covers Bc\Json\Json::decode()
-     * @covers Bc\Json\Json::getError()
+     * @covers Braincrafted\Json\Json::decode()
+     * @covers Braincrafted\Json\Json::getError()
      *
-     * @expectedException Bc\Json\JsonDecodeException
+     * @expectedException Braincrafted\Json\JsonDecodeException
      */
     public function testDecode_WithError()
     {

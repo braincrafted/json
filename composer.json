@@ -1,9 +1,10 @@
 {
     "name": "braincrafted/json",
+    "license": "MIT",
     "require-dev": {
         "phpunit/phpunit": "3.7.x"
     },
     "autoload": {
-        "psr-0": {"Bc\\Json": "src/"}
+        "psr-0": { "Braincrafted\\Json": "src/" }
     }
 }

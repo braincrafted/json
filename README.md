@@ -1,16 +1,16 @@
-BcJson
-======
+BraincraftedJson
+================
 
 [![Build Status](https://travis-ci.org/braincrafted/json.png)](https://travis-ci.org/braincrafted/json)
 
 An object-orientated wrapper for json_encode() and json_decode() with error handling.
 
-By [Florian Eckerstorfer](http://florianeckerstorfer.com).
+By [Florian Eckerstorfer](http://florian.ec).
 
 Installation
 ------------
 
-The recommended way of installing BcJson is through [Composer](http://getcomposer.org):
+The recommended way of installing BraincraftedJson is through [Composer](http://getcomposer.org):
 
     {
         "require": {
@@ -23,8 +23,8 @@ Usage
 
     <?php
 
-    use Bc\Json\Json;
-    use Bc\Json\JsonDecodeException;
+    use Braincrafted\Json\Json;
+    use Braincrafted\Json\JsonDecodeException;
 
     // Encode a variable as JSON:
     echo Json::encode(array('name' => 'Bilbo Baggins'));

@@ -2,14 +2,14 @@
 
 <phpunit bootstrap="tests/bootstrap.php" colors="true">
     <testsuites>
-        <testsuite name="BcJson Test Suite">
-            <directory>tests/Bc/Json/</directory>
+        <testsuite name="BraincraftedJson Test Suite">
+            <directory>tests/Braincrafted/Json/</directory>
         </testsuite>
     </testsuites>
 
     <filter>
         <whitelist>
-            <directory suffix=".php">src/Bc/Json/</directory>
+            <directory suffix=".php">src/Braincrafted/Json/</directory>
         </whitelist>
     </filter>
 </phpunit>

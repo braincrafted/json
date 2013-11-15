@@ -1,16 +1,16 @@
 <?php
 /**
- * This file is part of BcJson.
+ * This file is part of BraincraftedJson.
  *
  * (c) 2013 Florian Eckerstorfer
  */
 
-namespace Bc\Json;
+namespace Braincrafted\Json;
 
 /**
  * JsonDecodeException
  *
- * @package   BcJson
+ * @package   BraincraftedJson
  * @author    Florian Eckerstorfer <florian@eckerstorfer.co>
  * @copyright 2013 Florian Eckerstorfer
  * @license   http://opensource.org/licenses/MIT The MIT License
