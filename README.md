@@ -40,6 +40,14 @@ Usage
     }
 
 
+Changelog
+---------
+
+### Version 0.2 (15 November 2013)
+
+- Changed namespace to `Braincrafted`
+
+
 License
 -------
 
