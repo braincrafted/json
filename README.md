@@ -7,6 +7,7 @@ Braincrafted\Json
 
 Developed by [Florian Eckerstorfer](https://florian.ec) in Vienna, Europe.
 
+
 Installation
 ------------
 
@@ -18,6 +19,7 @@ $ composer require braincrafted/json:@stable
 
 *__Tip:__ You should replace `@stable` with the most recent version from the
 [releases](https://github.com/braincrafted/json/releases) page.*
+
 
 Usage
 -----
@@ -32,6 +34,9 @@ echo Json::encode(array('name' => 'Bilbo Baggins'));
 // Decode JSON:
 print_r(Json::decode('{"name": "Bilbo Baggins"}'));
 
+// Decode JSON into an array:
+print_r(Json::decode('{"name": "Bilbo Baggins"}', Json::DECODE_ASSOC));
+
 // Error handling
 try {
     Json::decode('{"name": "Bilbo Baggins"'); // missing }
@@ -43,6 +48,12 @@ try {
 
 Changelog
 ---------
+
+### Version 0.3 (18 November 2014)
+
+- Switched from PSR-0 to PSR-4
+- Use `Json::DECODE_ASSOC` and `Json::DECODE_OBJECT` as second argument for `Json::decode()`
+
 
 ### Version 0.2 (15 November 2013)
 

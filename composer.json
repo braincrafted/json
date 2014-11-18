@@ -5,6 +5,6 @@
         "phpunit/phpunit": "3.7.x"
     },
     "autoload": {
-        "psr-0": { "Braincrafted\\Json": "src/" }
+        "psr-4": { "Braincrafted\\Json\\": "src/" }
     }
 }
