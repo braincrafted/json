@@ -2,7 +2,7 @@
 
 <phpunit bootstrap="tests/bootstrap.php" colors="true">
     <testsuites>
-        <testsuite name="BraincraftedJson Test Suite">
+        <testsuite name="Braincrafted\Json Test Suite">
             <directory>tests/Braincrafted/Json/</directory>
         </testsuite>
     </testsuites>

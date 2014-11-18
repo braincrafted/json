@@ -1,43 +1,44 @@
-BraincraftedJson
-================
+Braincrafted\Json
+=================
+
+> An object-orientated wrapper for json_encode() and json_decode() with error handling.
 
 [![Build Status](https://travis-ci.org/braincrafted/json.png)](https://travis-ci.org/braincrafted/json)
 
-An object-orientated wrapper for json_encode() and json_decode() with error handling.
-
-By [Florian Eckerstorfer](http://florian.ec).
+Developed by [Florian Eckerstorfer](https://florian.ec) in Vienna, Europe.
 
 Installation
 ------------
 
 The recommended way of installing BraincraftedJson is through [Composer](http://getcomposer.org):
 
-    {
-        "require": {
-            "braincrafted/json": "dev-master"
-        }
-    }
+```shell
+$ composer require braincrafted/json:@stable
+```
+
+*__Tip:__ You should replace `@stable` with the most recent version from the
+[releases](https://github.com/braincrafted/json/releases) page.*
 
 Usage
 -----
 
-    <?php
+```php
+use Braincrafted\Json\Json;
+use Braincrafted\Json\JsonDecodeException;
 
-    use Braincrafted\Json\Json;
-    use Braincrafted\Json\JsonDecodeException;
+// Encode a variable as JSON:
+echo Json::encode(array('name' => 'Bilbo Baggins'));
 
-    // Encode a variable as JSON:
-    echo Json::encode(array('name' => 'Bilbo Baggins'));
+// Decode JSON:
+print_r(Json::decode('{"name": "Bilbo Baggins"}'));
 
-    // Decode JSON:
-    print_r(Json::decode('{"name": "Bilbo Baggins"}'));
-
-    // Error handling
-    try {
-        Json::decode('{"name": "Bilbo Baggins"'); // missing }
-    } catch (JsonDecodeException $e) {
-        echo sprintf("Could not decode JSON.\nReason: %s", $e->getMessage());
-    }
+// Error handling
+try {
+    Json::decode('{"name": "Bilbo Baggins"'); // missing }
+} catch (JsonDecodeException $e) {
+    echo sprintf("Could not decode JSON.\nReason: %s", $e->getMessage());
+}
+```
 
 
 Changelog
@@ -74,7 +75,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/braincrafted/json/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

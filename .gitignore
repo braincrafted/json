@@ -1,3 +1,5 @@
-docs/generated/
-phpunit.xml
-vendor/
+/build/coverage
+/phpunit.xml
+/vendor/
+/.idea/
+/composer.lock
