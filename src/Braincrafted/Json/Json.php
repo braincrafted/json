@@ -19,6 +19,9 @@ namespace Braincrafted\Json;
  */
 class Json
 {
+    const DECODE_ASSOC  = true;
+    const DECODE_OBJECT = false;
+
     /**
      * Mapping of PHPs error constants to error messages.
      *
@@ -69,7 +72,7 @@ class Json
      *
      * @throws JsonDecodeException
      */
-    public static function decode($json, $assoc = false, $depth = 512, $options = 0)
+    public static function decode($json, $assoc = self::DECODE_OBJECT, $depth = 512, $options = 0)
     {
         $result = json_decode($json, $assoc, $depth, $options);
         if ($error = self::getError()) {
@@ -98,7 +101,7 @@ class Json
         }
 
         // @codeCoverageIgnoreStart
-        return 'Unkown error';
+        return 'Unknown error';
         // @codeCoverageIgnoreEnd
     }
 }

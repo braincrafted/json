@@ -43,15 +43,30 @@ class JsonTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Tests the <code>decode()</code> method with an excpetion.
+     * Tests the <code>decode()</code> method.
      *
      * @covers Braincrafted\Json\Json::decode()
      * @covers Braincrafted\Json\Json::getError()
+     */
+    public function testDecodeAssoc()
+    {
+        $json = '{"var1":"foo","var2":42}';
+        $this->assertEquals(json_decode($json, true), Json::decode($json, Json::DECODE_ASSOC));
+    }
+
+    /**
+     * Tests the <code>decode()</code> method with an exception.
      *
-     * @expectedException Braincrafted\Json\JsonDecodeException
+     * @covers Braincrafted\Json\Json::decode()
+     * @covers Braincrafted\Json\Json::getError()
      */
     public function testDecode_WithError()
     {
-        Json::decode('{"var1":"foo","var2":42');
+        try {
+            Json::decode('{"var1":"foo","var2":42');
+            $this->assertTrue(false);
+        } catch (JsonDecodeException $e) {
+            $this->assertTrue(true);
+        }
     }
 }
